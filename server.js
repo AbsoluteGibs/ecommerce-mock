@@ -4,6 +4,8 @@ const app = express()
 
 app.set('view engine', 'ejs')
 
+app.use(express.static(__dirname + "/public"))
+
 // displays successful response text on the site when root of domain is visited
 app.get('/', (req, res) => {
     res.render('home', { deez: "nuts" })
