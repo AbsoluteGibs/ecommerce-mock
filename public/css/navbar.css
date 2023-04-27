@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
     background: #232323;
     color: #cdcdcd;
     padding: 20px;
@@ -16,28 +15,28 @@
     text-decoration: none;
 }
   
-.menu-logo {
+.navbar-logo {
     line-height: 0;
     margin: 0 20px;
 }
 
-.menu-logo img {
+.navbar-logo img {
     max-height: 40px;
     max-width: 100px;
     flex-shrink: 0;
 }
 
-.menu-container a {
+.navbar-container a {
     text-decoration: none;
     color: #232323;
     transition: color 0.3s ease;
 }
 
-.menu-container a:hover {
+.navbar-container a:hover {
     color: #00C6A7;
 }
 
-.menu-container input {
+.navbar-container input {
     display: block;
     width: 35px;
     height: 25px;
@@ -156,9 +155,11 @@
 
 .navbar {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: space-between;
+    margin-left: auto;
+    order: 2;
 }
 
 .navbar ul {
